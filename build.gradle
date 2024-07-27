@@ -1,13 +1,13 @@
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         maven {
             name = "forge"
             url = "https://files.minecraftforge.net/maven"
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:5.1.0'  // Update to a compatible version
     }
 }
 
@@ -29,6 +29,7 @@ minecraft {
 }
 
 dependencies {
+    // Use 'implementation' instead of 'compile'
 }
 
 processResources {
