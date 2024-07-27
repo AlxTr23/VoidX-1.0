@@ -24,8 +24,8 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.Phase;
 
 @Mod(
-   modid = "keystrokesmod",
-   name = "KeystrokesMod",
+   modid = "VoidX",
+   name = "VoidX",
    version = "KMV5",
    acceptedMinecraftVersions = "[1.8.9]"
 )
