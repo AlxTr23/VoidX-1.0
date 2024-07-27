@@ -7,16 +7,18 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:5.1.0'  // Update to a compatible version
+        classpath 'net.minecraftforge.gradle:ForgeGradle:5.1.0'  // Update this version as needed
     }
+}
+
+plugins {
+    id 'net.minecraftforge.gradle.forge' version '5.1.0'  // Update this version as needed
 }
 
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-
-apply plugin: 'net.minecraftforge.gradle.forge'
 
 version = "1.0"
 group= "com.yourname.modid"
@@ -29,7 +31,7 @@ minecraft {
 }
 
 dependencies {
-    // Use 'implementation' instead of 'compile'
+    // Use 'implementation' instead of 'compile' if you have any dependencies
 }
 
 processResources {
