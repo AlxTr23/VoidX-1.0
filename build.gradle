@@ -2,26 +2,22 @@ buildscript {
     repositories {
         mavenCentral()
         maven {
-            name = "forge"
-            url = "https://files.minecraftforge.net/maven"
+            name = "Forge"
+            url = "https://files.minecraftforge.net/maven" // Ensure HTTPS is used
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:5.1.0'  // Update this version as needed
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT' // This version is compatible with Minecraft 1.8.9
     }
 }
 
-plugins {
-    id 'net.minecraftforge.gradle.forge' version '5.1.0'  // Update this version as needed
-}
-
-apply plugin: 'java'
+apply plugin: 'net.minecraftforge.gradle.forge'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 version = "1.0"
-group= "com.yourname.modid"
+group = "com.yourname.modid"
 archivesBaseName = "modid"
 
 minecraft {
@@ -31,7 +27,7 @@ minecraft {
 }
 
 dependencies {
-    // Use 'implementation' instead of 'compile' if you have any dependencies
+    // Add your dependencies here
 }
 
 processResources {
@@ -40,7 +36,7 @@ processResources {
 
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
-        expand 'version':project.version, 'mcversion':project.minecraft.version
+        expand 'version': project.version, 'mcversion': project.minecraft.version
     }
 
     from(sourceSets.main.resources.srcDirs) {
