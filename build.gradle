@@ -3,11 +3,11 @@ buildscript {
         mavenCentral()
         maven {
             name = "Forge"
-            url = "https://files.minecraftforge.net/maven" // Ensure HTTPS is used
+            url = "https://files.minecraftforge.net/maven" // Ensure HTTPS
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT' // This version is compatible with Minecraft 1.8.9
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT' // Compatible with Minecraft 1.8.9
     }
 }
 
@@ -27,7 +27,7 @@ minecraft {
 }
 
 dependencies {
-    // Add your dependencies here
+    // Add dependencies here if needed
 }
 
 processResources {
