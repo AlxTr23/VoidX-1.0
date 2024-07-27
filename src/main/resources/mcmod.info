@@ -1,13 +1,13 @@
 [
 {
-  "modid": "keystrokesmod",
-  "name": "KeystrokesMod",
+  "modid": "VoidX",
+  "name": "VoidX",
   "description": "Shows your keystrokes ingame. | Updated and modified by spiderfrog | V5 by Yario & Extazz | Ported by OFP.",
   "version": "KMV5",
-  "url": "https://www.youtube.com/ofpmedia",
+  "url": "https://www.youtube.com/channel/UCtG-aQChFhXv7lhbkmcuFnw",
   "updateUrl": "",
-  "authorList": ["OFP", "Fyu", "spiderfrog", "Yario & Extazz"],
-  "credits": "OFP, Fyu, spiderfrog, Yario & Extazz",
+  "authorList": ["AlxTr23"],
+  "credits": "AlxTr23",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
